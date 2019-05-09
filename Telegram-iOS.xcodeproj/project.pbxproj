@@ -213,6 +213,7 @@
 		09D304382174344900C00567 /* TGBridgeWebPageMediaAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C572F52172953500BDF00F /* TGBridgeWebPageMediaAttachment.m */; };
 		09D304392174344900C00567 /* TGBridgeMessageEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C572F42172953500BDF00F /* TGBridgeMessageEntities.m */; };
 		09FDAEE62140477F00BF856F /* MtProtoKitDynamic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FDAEE52140477F00BF856F /* MtProtoKitDynamic.framework */; };
+		3F2F05782284BE7300B14E66 /* Config-Llamagram.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */; };
 		D000CACF21FB6E380011B15D /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D000CAC821FB6E370011B15D /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D001D5AA1F878DA300DF975A /* PhoneCountries.txt in Resources */ = {isa = PBXBuildFile; fileRef = D001D5A91F878DA300DF975A /* PhoneCountries.txt */; };
 		D006CF9F21A8D11B00FDCD32 /* ModernProto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D006CF9E21A8D11B00FDCD32 /* ModernProto.framework */; };
@@ -910,6 +911,7 @@
 		09CFB211217299E80083F7A3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		09D304212174335F00C00567 /* WatchBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchBridge.swift; sourceTree = "<group>"; };
 		09FDAEE52140477F00BF856F /* MtProtoKitDynamic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MtProtoKitDynamic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Config-Llamagram.xcconfig"; sourceTree = "<group>"; };
 		D000CAC021FB6E160011B15D /* NotificationService-HockeyApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NotificationService-HockeyApp.entitlements"; sourceTree = "<group>"; };
 		D000CAC121FB6E160011B15D /* NotificationService-Fork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NotificationService-Fork.entitlements"; sourceTree = "<group>"; };
 		D000CAC221FB6E170011B15D /* NotificationService-AppStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "NotificationService-AppStore.entitlements"; sourceTree = "<group>"; };
@@ -1969,6 +1971,7 @@
 				D0338729223A8347007A2CE4 /* Config */,
 				09C50E7821738150009E676F /* Watch */,
 				D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */,
+				3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */,
 				D0ADF913212B398000310BBC /* Telegram-iOS-AppStoreLLC.entitlements */,
 				D079FD001F06BBD10038FADE /* Telegram-iOS-AppStore.entitlements */,
 				D0E3A7071B285B5000A402D9 /* Telegram-iOS-Hockeyapp.entitlements */,
@@ -2838,6 +2841,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				pt,
@@ -2914,6 +2918,7 @@
 				D0338736223A9A9A007A2CE4 /* Config-Hockeyapp-Internal.xcconfig in Resources */,
 				D08DB0C0213F4D1D00F2ADBF /* telegram_sphere@2x.png in Resources */,
 				D08DB0AB213F4D1D00F2ADBF /* ic_bubble@2x.png in Resources */,
+				3F2F05782284BE7300B14E66 /* Config-Llamagram.xcconfig in Resources */,
 				D04DCC341F71C80000B021D7 /* 7.m4a in Resources */,
 				D0CE6F60213EDA4400BCD44B /* AppIntentVocabulary.plist in Resources */,
 				D0CE6F63213EDA4400BCD44B /* AppIntentVocabulary.plist in Resources */,
@@ -4715,7 +4720,7 @@
 		};
 		D000CAD221FB6E380011B15D /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_NUMBER = 99999;
@@ -5375,7 +5380,7 @@
 		};
 		D021D4DE219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_NUMBER = 9999;
@@ -5427,7 +5432,7 @@
 		};
 		D021D4DF219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -5470,7 +5475,7 @@
 		};
 		D021D4E0219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -5493,7 +5498,7 @@
 		};
 		D021D4E1219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				BUILD_NUMBER = 99999;
@@ -5525,7 +5530,7 @@
 		};
 		D021D4E2219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				BUILD_NUMBER = 99999;
@@ -5553,7 +5558,7 @@
 		};
 		D021D4E3219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -5622,7 +5627,7 @@
 		};
 		D021D4E4219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_NUMBER = 99999;
@@ -5695,7 +5700,7 @@
 		};
 		D021D4E5219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUILD_NUMBER = 99999;
@@ -5771,7 +5776,7 @@
 		};
 		D021D4E6219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -5846,7 +5851,7 @@
 		};
 		D021D4E7219CB13A0064BEBA /* DebugFork */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D021D4D8219CAEDD0064BEBA /* Config-Fork.xcconfig */;
+			baseConfigurationReference = 3F2F05772284BE7300B14E66 /* Config-Llamagram.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
